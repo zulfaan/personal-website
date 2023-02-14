@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 1rem;
+}
+.text-bg{
+    color: rgb(114, 114, 114);
+    opacity: 40%;
+}
+.Container{
+    background-color: saddlebrown;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem;
+}
+.cardLong{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 20rem;
+    margin: 1rem 0.8rem;
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+}
+.cardShort{
+    background-color: yellow;
+    width: 25%;
+    height: 20rem;
+    margin: 1rem 0.8rem;
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+}
+.img{
+    height: 75%;
+    width: 100%;
+    background-color: rebeccapurple;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.title{
+    margin: 0 2rem;
+    line-height: 1.5;
+}
+.text{
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+.pText{
+    background-color: aquamarine;
+    width: 70%;
+}
+.work{
+    background-color: blue;
+    width: 7rem;
+}
+a{
+    background-color: salmon;
+}
+.un-img{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.un-text{
+    margin: 5rem 2rem 0 2rem;
+    background-color: seagreen;
+}
+.card-img{
+    background-color: aquamarine;
+    margin: 0.5rem;
+    width: 28%;
+}
+.mini-img{
+    background-color: black;
+    height: 75%;
+}
+.text-img{
+    background-color: aliceblue;
+    margin-top: 0.5rem;
+}
