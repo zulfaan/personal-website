@@ -87,6 +87,9 @@ header{
     padding-bottom: 2rem;
     cursor: pointer;
 }
+div a{
+    color: black;
+}
 div.cardLong:hover{
     -webkit-box-shadow: 0 0 1rem yellow;
     -moz-box-shadow: 0 0 1rem yellow;
@@ -107,6 +110,12 @@ div.cardShort:hover{
     -webkit-box-shadow: 0 0 1rem blanchedalmond;
     -moz-box-shadow: 0 0 1rem blanchedalmond;
     box-shadow: 0 0 1rem blanchedalmond;
+}
+div.cardLong:hover a{
+    color: blue;
+}
+div.cardShort:hover a{
+    color: blue;
 }
 .img{
     height: 75%;
@@ -134,9 +143,6 @@ div.cardShort:hover{
 .work{
     background-color: blue;
     width: 7rem;
-}
-div a{
-    background-color: salmon;
 }
 .un-img{
     height: 75%;
