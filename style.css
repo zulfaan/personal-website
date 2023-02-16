@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-ul{
+nav ul{
     background-color: darkcyan;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ ul{
     padding: 1rem;
     height: 100%;
 }
-li{
+nav ul li{
     margin: 0.5rem 0;
     list-style: none;
     display: inline-block;
@@ -79,7 +79,7 @@ header{
 .cardLong{
     background-color: blanchedalmond;
     width: 50%;
-    height: 20rem;
+    height: 18rem;
     margin: 1rem 0.8rem;
     -webkit-border-radius: 2;
     -moz-border-radius: 2;
@@ -98,7 +98,7 @@ div.cardLong:hover{
 .cardShort{
     background-color: yellow;
     width: 25%;
-    height: 20rem;
+    height: 18rem;
     margin: 1rem 0.8rem;
     -webkit-border-radius: 2;
     -moz-border-radius: 2;
@@ -117,12 +117,19 @@ div.cardLong:hover a{
 div.cardShort:hover a{
     color: blue;
 }
-.img{
+div.img{
     height: 75%;
     width: 100%;
     background-color: rebeccapurple;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    overflow: hidden;
+}
+div div.img img#photoprofile{
+    margin: 2.5rem 2rem 0 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
 }
 .title{
     margin: 0 2rem;
@@ -136,6 +143,11 @@ div.cardShort:hover a{
     align-items: center;
     margin: 0 2rem;
 }
+div div.img img.portf{
+    margin: 2.5rem 2rem 0 2rem;
+    width: 10rem;
+    height: 10rem;
+}
 .pText{
     background-color: aquamarine;
     width: 70%;
@@ -144,17 +156,25 @@ div.cardShort:hover a{
     background-color: blue;
     width: 7rem;
 }
-.un-img{
+/* .un-img{
     height: 75%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} */
 .un-text{
-    margin: 5rem 2rem 0 1.5rem;
+    margin: 1rem 2rem 1.5rem 1.5rem;
     display: inline-block;
     background-color: aqua;
+}
+div div.un-img ul.skill{
+    margin: 0 2rem  0 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+div ul li.codes{
+    list-style: none;
 }
 .card-img{
     background-color: aquamarine;
