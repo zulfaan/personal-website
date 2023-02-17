@@ -7,6 +7,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
 nav ul{
     background-color: darkcyan;
     display: flex;
@@ -120,72 +123,96 @@ div.cardShort:hover a{
 div.img{
     height: 75%;
     width: 100%;
-    background-color: rebeccapurple;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
     overflow: hidden;
 }
 div div.img img#photoprofile{
-    margin: 2.5rem 2rem 0 2rem;
-    width: 10rem;
-    height: 10rem;
+    margin: 1rem 1rem;
+    /* width: 40%; */
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
 }
 .title{
     margin: 0 2rem;
     line-height: 1.5;
 }
-.text{
+div div.text{
     background-color: floralwhite;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
+    margin: 0.4rem 2rem;
+
 }
-div div.img img.portf{
-    margin: 2.5rem 2rem 0 2rem;
+div.cardShort div.img img.portf-1{
+    margin: 3rem 1rem;
+    /* width: 70%; */
     width: 10rem;
     height: 10rem;
 }
-.pText{
+div.cardShort div.img img.portf-2{
+    margin: 3rem 2rem;
+    /* width: 70%; */
+    width: 10rem;
+    height: 10rem;
+}
+div.cardLong div.img img.portf-2{
+    margin: 3rem 2rem;
+    /* width: 40%; */
+    width: 10rem;
+    height: 10rem;
+}
+div div.title p{
     background-color: aquamarine;
-    width: 70%;
+    text-transform: uppercase;
+    word-spacing: 0.1rem;
+    letter-spacing: -0.05rem;
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 1;
 }
-.work{
+
+div div.text h2.work{
     background-color: blue;
-    width: 7rem;
+    display: inline-block;
+    line-height: 1;
 }
-/* .un-img{
-    height: 75%;
-    width: 100%;
+div div.connect{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-} */
+    align-items: left;
+}
+div div.connect div.text p{
+    background-color: rebeccapurple;
+    width: 70%;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
 .un-text{
-    margin: 1rem 2rem 1.5rem 1.5rem;
+    margin: 2rem 2rem 0 1.5rem;
     display: inline-block;
     background-color: aqua;
 }
 div div.un-img ul.skill{
-    margin: 0 2rem  0 1.5rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 div ul li.codes{
     list-style: none;
+    margin: 3% 5%;
+    width: max-content;
 }
-.card-img{
-    background-color: aquamarine;
-    margin: 0.5rem;
-    width: 28%;
+div ul li.codes img{
+    width: 6rem;
+    height: 6rem;
 }
-.mini-img{
-    background-color: black;
-    height: 75%;
-}
-.text-img{
-    background-color: aliceblue;
-    margin-top: 0.5rem;
+@media only screen and (min-width: 450px){
+    
 }
