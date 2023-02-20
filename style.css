@@ -79,16 +79,24 @@ header{
     flex-direction: row;
     padding: 0 5rem 0 15rem;
 }
+main div.Container{
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 .cardLong{
     background-color: blanchedalmond;
-    width: 50%;
+    /* width: 50%; */
+    width: 25%;
     height: 18rem;
-    margin: 1rem 0.8rem;
+    /* margin: 1rem 0.8rem; */
     -webkit-border-radius: 2;
     -moz-border-radius: 2;
     border-radius: 2rem;
     padding-bottom: 2rem;
     cursor: pointer;
+    flex-grow: 1;
 }
 div a{
     color: black;
@@ -102,7 +110,7 @@ div.cardLong:hover{
     background-color: yellow;
     width: 25%;
     height: 18rem;
-    margin: 1rem 0.8rem;
+    /* margin: 1rem 0.8rem; */
     -webkit-border-radius: 2;
     -moz-border-radius: 2;
     border-radius: 2rem;
@@ -176,7 +184,7 @@ div div.title p{
     line-height: 1;
 }
 
-div div.text h2.work{
+div div.text h2.work, div.web div.text h2{
     background-color: blue;
     display: inline-block;
     line-height: 1;
@@ -202,6 +210,8 @@ div div.connect div.text p{
 div div.un-img ul.skill{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
     align-items: center;
 }
 div ul li.codes{
@@ -213,6 +223,99 @@ div ul li.codes img{
     width: 6rem;
     height: 6rem;
 }
-@media only screen and (min-width: 450px){
-    
+@media only screen and (max-width: 1250px){
+    div.percobaan{
+        justify-content: center;
+    }
+    div.percobaan div.cardLong{
+        width: 40%;
+    }
+    div.percobaan div.cardShort{
+        width: 30%;
+    }
+    div.percobaan div.cardLong.web{
+        background-color: red;
+        width: 100%;
+    }
+    div.percobaan div.cardLong.skills{
+        width: 100%;
+        height: fit-content;
+    }
+    div div.un-img ul.skill{
+        margin-left: 1rem;
+    }
+    div ul li.codes{
+        background-color: aqua;
+        margin: 0.5rem;
+    }
+}
+@media only screen and (max-width: 950px){
+    nav ul{
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 1rem 0;
+    }
+    nav ul li{
+        margin: 0;
+        position: relative;
+        margin-right: 2rem;
+    }
+    nav ul li i#burger{
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    nav ul li a, nav ul li span.desc_menu{
+        display: none;
+    }
+    header{
+        font-size: xx-small;
+    }
+    main div.Container{
+        background-color: #1f628d;
+        padding: 0;
+    }
+    div.percobaan div.cardLong, div.percobaan div.cardLong.web{
+        width: 80%;
+        flex-grow: 0;
+    }
+    div.percobaan div.cardLong.skills{
+        width: 80%;
+        height: fit-content;
+    }
+    div.percobaan div.cardShort{
+        width: 80%;
+    }
+    div.percobaan div.cardLong ul.skill{
+        height: fit-content;
+    }
+}
+@media only screen and (max-width: 490px){
+    div.percobaan div.cardLong.skills{
+        height: fit-content;
+    }
+    div div.un-img ul.skill{
+        gap: 1rem;
+        width: 90%;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+    }
+    div ul li.codes{
+        margin: 0;
+        width: max-content;
+    }
+    div div.un-img ul.skill li.codes img{
+        width: 5rem;
+        height: 5rem;
+    }
 }
