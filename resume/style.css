@@ -8,14 +8,191 @@ li{
 a{
     text-decoration: none;
 }
+img{
+    width: 5rem;
+    height: 5rem;
+}
+p{
+    font-size:1.3rem;
+}
+h1{
+    font-size: 2.5rem;
+}
 div.header{
     background-color: aquamarine;
 }
 main div.Container{
     background-color: aqua;
     display: flex;
+    height: 45rem;
     flex-direction: row;
+    padding-left: 2rem;
 }
 div.c-resume div.carouselShort{
-    
+    width: 50%;
 }
+div.c-resume div.carouselShort div.cardResume{
+    background-color: yellow;
+    width: 100%;
+    height: fit-content;
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+div.c-resume div.carouselLong{
+    background-color: antiquewhite;
+    padding: 1.5rem 1rem 1.5rem 5rem;
+    box-sizing: content-box;
+}
+div.cardResume ul, div.cardResume div.socialmedia{
+    margin-left: 2rem;
+}
+div.cardResume ul li{
+    line-height: 1;
+}
+div.cardResume ul.contact{
+    margin-top: 1rem;
+}
+div.cardResume ul.contact li a.btn-contact{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2rem;
+    border: 0.15rem solid black;
+}
+div.cardResume ul.contact li:hover a.btn-contact{
+    background-color: brown;
+    color: white;
+}
+div.cardResume div.socialmedia{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+}
+div.cardResume hr{
+    border: none;
+    border-top: 0.1rem solid black;
+    opacity: 40%;
+    margin: 0 2rem;
+}
+div div.cardResume div.socialmedia a{
+    color: black;
+}
+div div.cardResume div.socialmedia:hover a{
+    color: blue;
+}
+div div.carouselLong div.mcResume{
+    background-color: yellow;
+    margin-bottom: 2rem;
+}
+div.carouselLong div.mcResume h2.subtitle{
+    font-size: 2.5rem;
+}
+div.carouselLong div.mcResume p{
+    padding-right: 2rem;
+    background-color: red;
+    line-height: 1.3;
+}
+div.carouselLong div.mcResume div.experience h2, div.carouselLong div.mcResume div.edu h2, div.carouselLong div.mcResume div.org h2.nameOrg{
+    font-size: 1.8rem;
+    color: green;
+}
+div div.mcResume ul li h2{
+    margin-top: 0.2rem;
+}
+div div.mcResume div.org{
+    margin-top: 1rem;
+}
+div div.mcResume div.org ul li.jobs h2{
+    line-height: 1.2;
+    font-size: 1.4rem;
+}
+div div.mcResume ul li h3{
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media only screen and (min-width:1300px){
+    div.c-resume div.carouselLong{
+    overflow-x: visible;
+    overflow-y: scroll;
+    }
+    div.c-resume div.carouselLong::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    }
+    div.c-resume div.carouselLong::-webkit-scrollbar-thumb {
+    background: transparent;
+    }
+}
+@media only screen and (max-width:1300px){
+    main div.Container{
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    div.Container div.carouselShort{
+        background-color: antiquewhite;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    div.Container div.carouselShort div.cardResume{
+        width: 49%;
+        height: 15rem;
+    }
+    div.c-resume div.carouselLong{
+        padding: 0;
+        /* display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; */
+    }
+    div.c-resume div.carouselLong div.mcResume{
+        background-color: white;
+        /* width: 45%; */
+    }
+    div.c-resume div.carouselLong div.percobaan{
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    div.c-resume div.carouselLong div.percobaan h2{
+        width: 100%;
+    }
+    div.c-resume div.carouselLong div.percobaan div{
+        width: 50%;
+    }
+    div.c-resume div.carouselLong div.percobaan div.beda{
+        flex-grow: 1;
+    }
+    div.c-resume div.carouselLong div.beda ul{
+        width: 50%;
+        background-color: aqua;
+    }
+    div.c-resume div.carouselLong div.beda ul.name{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:900px){
+    div.Container div.carouselShort div.cardResume{
+        width: 100%;
+    }
+}
+

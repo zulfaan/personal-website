@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <main>
@@ -26,36 +27,38 @@
                             <h2>Front-End Developer</h2>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="contact">
                         <li><a href="mailto:znurfajar@gmail.com">znurfajar@gmail.com</a></li>
                         <li><a href="http://">www.suatuharidatang.com</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Contact Me</a></li>
+                    <ul class="contact">
+                        <li><a class="btn-contact" href="#">Contact Me</a></li>
                     </ul>
                 </div>
                 <div class="cardResume">
-                    <ul>
-                        <li>Linkedln</li>
-                        <a href="http://">arrow</a>
-                    </ul>
-                    <ul>
-                        <li>Linkedln</li>
-                        <a href="http://">arrow</a>
-                    </ul>
-                    <ul>
-                        <li>Linkedln</li>
-                        <a href="http://">arrow</a>
-                    </ul>
+                    <div class="socialmedia">
+                        <h2>Linkedln</h2>
+                        <a href="http://"><i class='bx bx-right-top-arrow-circle bx-md'></i></a>
+                    </div>
+                    <hr>
+                    <div class="socialmedia">
+                        <h2>Linkedln</h2>
+                        <a href="http://"><i class='bx bx-right-top-arrow-circle bx-md'></i></a>
+                    </div>
+                    <hr>
+                    <div class="socialmedia">
+                        <h2>Linkedln</h2>
+                        <a href="http://"><i class='bx bx-right-top-arrow-circle bx-md'></i></a>
+                    </div>
                 </div>
             </div>
             <div class="carouselLong">
                 <div class="mcResume">
-                    <h2>About Me</h2>
+                    <h2 class="subtitle">About Me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste eius minima est nesciunt necessitatibus maxime aspernatur ipsam molestiae impedit laborum fuga at, architecto quaerat reprehenderit sunt a sed. Adipisci.</p>
                 </div>
                 <div class="mcResume">
-                    <h2>Experience</h2>
+                    <h2 class="subtitle">Experience</h2>
                     <div class="experience">
                         <ul>
                             <li>
@@ -85,7 +88,7 @@
                     </div>
                 </div>
                 <div class="mcResume">
-                    <h2>Education</h2>
+                    <h2 class="subtitle">Education</h2>
                     <div class="edu">
                         <ul>
                             <li>
@@ -97,66 +100,80 @@
                     </div>
                 </div>
                 <div class="mcResume">
-                    <h2>Organization</h2>
+                    <h2 class="subtitle">Organization</h2>
                     <div class="org">
                         <ul>
                             <li>
-                                <h2>BEM FPMIPA UPI</h2>
+                                <h2 class="nameOrg">BEM FPMIPA UPI</h2>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="jobs"><h2>Staf Media dan Informasi</h2></li>
+                            <li>
                                 <h3>Sept 2020 - Jan 2021</h3>
                             </li>
                         </ul>
-                        <ul>
-                            <li>Staf Media dan Informasi</li>
-                        </ul>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
                     </div>
                     <div class="org">
                         <ul>
                             <li>
-                                <h2>UKK Cakrawala FPMIPA UPI</h2>
-                                <h3>March 2020 - Jan 2021</h3>
+                                <h2 class="nameOrg">UKK Cakrawala FPMIPA UPI</h2>
                             </li>
                         </ul>
                         <ul>
-                            <li>Staf Departemen Komunikasi dan Informasi</li>
+                            <li class="jobs"><h2>Staf Departemen Komunikasi dan Informasi</h2></li>
+                            <li>
+                                <h3>March 2020 - Jan 2021</h3>
+                            </li>
                         </ul>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
                     </div>
                     <div class="org">
-                        <ul>
+                        <ul class="name">
                             <li>
-                                <h2>HMF FPMIPA UPI</h2>
+                                <h2 class="nameOrg">HMF FPMIPA UPI</h2>
                             </li>
                         </ul>
-                        <ul>
-                            <li>Staf Departemen Komunikasi dan Informasi</li>
+                        <ul class="jabatan">
+                            <li class="jobs"><h2>Staf Departemen Komunikasi dan Informasi</h2></li>
                             <li>
                                 <h3>March 2020 - Jan 2021</h3>
                             </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
+                            </li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
-                        <ul>
-                            <li>Staf Ekonomi dan Bisnis</li>
+                        <ul class="jabatan">
+                            <li class="jobs"><h2>Staf Ekonomi dan Bisnis</h2></li>
                             <li>
                                 <h3>March 2019 - Jan 2020</h3>
                             </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
+                            </li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem totam saepe optio recusandae quisquam commodi a numquam corrupti, ducimus magnam laborum ipsam, doloremque incidunt officiis nobis amet aut rem tenetur.</p>
                     </div>
                 </div>
                 <div class="mcResume">
-                    <h2>Volunteer</h2>
+                    <h2 class="subtitle">Volunteer</h2>
                     <ul>
-                        <li>Astrajingga</li>
+                        <li class="jobs"><h2>Astrajingga</h2></li>
+                        <li>
+                            <h3>March 2020 - Jan 2021</h3>
+                        </li>
                         <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque vero nisi dolores impedit, et qui explicabo. Asperiores accusantium temporibus, dicta iusto ratione tenetur! Obcaecati, eos architecto! Neque, delectus placeat?</p></li>
                     </ul>
                     <ul>
-                        <li>Tanya Nara</li>
+                        <li class="jobs"><h2>Tanya Nara</h2></li>
+                        <li>
+                            <h3>March 2019 - Jan 2020</h3>
+                        </li>
                         <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque vero nisi dolores impedit, et qui explicabo. Asperiores accusantium temporibus, dicta iusto ratione tenetur! Obcaecati, eos architecto! Neque, delectus placeat?</p></li>
                     </ul>
                 </div>
                 <div class="mcResume">
-                    <h2>Skills</h2>
+                    <h2 class="subtitle">Skills</h2>
                     <ul>
                         <li>Analyst</li>
                         <li>Database</li>
